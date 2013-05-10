@@ -45,6 +45,9 @@ footer.joli {
   color: #bcbcbc;
   text-align: right; }
 
+.reveal section .emphasis {
+  color: #25b2f7; }
+
 .reveal section .no-caps {
   text-transform: none; }
 .reveal section p {

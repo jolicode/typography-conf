@@ -20,6 +20,7 @@
 
 $joli-yellow:       #F7D325;
 $joli-dark-yellow:  #ECC217;
+$complementary:     #25b2f7;
 
 // Include theme-specific fonts
 @font-face {
@@ -75,6 +76,10 @@ footer.joli {
     font-size: 0.6em;
     color:#bcbcbc;
     text-align: right;
+}
+
+.reveal section .emphasis {
+    color: $complementary;
 }
 
 .reveal section {
