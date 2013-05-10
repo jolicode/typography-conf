@@ -50,6 +50,10 @@ footer.joli {
 
 .reveal section .no-caps {
   text-transform: none; }
+.reveal section .no-border {
+  border: none;
+  box-shadow: none;
+  background: transparent; }
 .reveal section p {
   line-height: 1.5em; }
 .reveal section li {
