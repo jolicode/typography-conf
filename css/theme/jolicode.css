@@ -54,10 +54,17 @@ footer.joli {
   border: none;
   box-shadow: none;
   background: transparent; }
+.reveal section .big-shadow {
+  text-shadow: -5px 5px 25px black, 5px -5px 25px black, 5px 5px 25px black, -5px -5px 25px black; }
 .reveal section p {
   line-height: 1.5em; }
 .reveal section li {
   padding: 10px 0; }
+.reveal section pre {
+  width: 100%; }
+  .reveal section pre code {
+    font-size: 1.4em;
+    line-height: 1em; }
 
 /*********************************************
  * GLOBAL STYLES

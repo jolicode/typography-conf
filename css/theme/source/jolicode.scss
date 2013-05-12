@@ -91,11 +91,26 @@ footer.joli {
         box-shadow: none;
         background: transparent;
     }
+    .big-shadow {
+      text-shadow: -5px 5px  25px #000,
+                   5px  -5px 25px #000,
+                   5px  5px  25px #000,
+                   -5px -5px 25px #000
+      ;
+    }
     p {
         line-height: 1.5em;
     }
     li {
         padding: 10px 0;
+    }
+    pre {
+        width:100%;
+
+        code {
+            font-size: 1.4em;
+            line-height: 1em;
+        }
     }
 }
 

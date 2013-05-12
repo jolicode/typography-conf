@@ -30,6 +30,11 @@
                 background-size: 25%;
             }
 
+            .spacecat .reveal {
+                background-image: url('images/spacecat.jpg');
+                background-size: cover;
+            }
+
             .keyboard-help img {
                 height: 1em;
                 vertical-align: text-top;
@@ -132,7 +137,9 @@
                 </section>
 
                 <section>
-                    <h3 class="no-caps">Les régles de micro-typographie sont listés dans des Code Typographique</h3>
+                    <h3 class="no-caps">Les régles de micro-typographie sont listés dans des</h3>
+
+                    <h2>Code Typographique</h2>
                 </section>
 
                 <section>
@@ -153,21 +160,21 @@
                     <p>Capitales, italique, nombres, abréviations, ponctuation, césure...</p>
 
                     <div style="display: inline-block; width: 45%">
-                        <img src="images/lexique.jpg" style="width: 80%" alt="Lexique des règles typographiques en usage à l’Imprimerie nationale"/>
+                        <img src="images/lexique.jpg" style="width: 80%" class="no-border" alt="Lexique des règles typographiques en usage à l’Imprimerie nationale"/>
 
                         <p>ISBN : 978-2-7433-0482-9</p>
                     </div>
                     <div style="display: inline-block; width: 45%">
-                        <img src="images/abregé.jpg" style="width: 50%" alt="Lexique des règles typographiques en usage à l’Imprimerie nationale"/>
+                        <img src="images/abregé.jpg" style="width: 50%" class="no-border" alt="Abrégé du code typographique à l'usage de la presse"/>
 
                         <p>ISBN : 978-2351130667</p>
                     </div>
                 </section>
 
-                <section>
-                    <h2>L'espace</h2>
+                <section data-state="spacecat">
+                    <h2 class="big-shadow">L’espace</h2>
 
-                    <p>Ce bordel inter-galactique</p>
+                    <p class="big-shadow">Ce bordel inter-galactique</p>
                 </section>
 
                 <section>
@@ -262,7 +269,7 @@
                     <ul>
                         <li>Non supporté par Windows XP ;</li>
                         <li>Doit être disponible dans la police ;</li>
-                        <li>Quart cadratin insécable pour les intîmes.</li>
+                        <li>Quart cadratin insécable pour les intimes.</li>
                     </ul>
 
                     <p class="keyboard-help">
@@ -274,14 +281,14 @@
                 </section>
 
                 <section>
-                    <h2>Les petits hacks crado</h2>
+                    <h2>Les petits hacks</h2>
 
-                    <pre><code>&lt;span class="demiespace"&gt;&amp;nbsp;&lt;/span&gt;
+                    <pre><code>&lt;span style="font-size:0.5em;"&gt;&amp;nbsp;&lt;/span&gt;
 
 &lt;span style="white-space:nowrap">&amp;thinsp;&lt;/span&gt;
 </code></pre>
 
-                    <p>Bonjour 1998.</p>
+                    <p>Bonjour 1998. <img src="images/old-internet.gif" alt="Dancing baby" class="no-border" style="vertical-align: middle"/></p>
                 </section>
 
                 <section>
@@ -373,13 +380,13 @@
                     <h2 class="no-caps">Introducing JoliTypo</h2>
 
                     <ul>
-                        <li>En PHP (dsl) ;</li>
-                        <li>Encore en Alpha ;</li>
-                        <li>Sous MIT ;</li>
-                        <li>Plein de test unitaire ;</li>
+                        <li>Ellipses, césures, guillemets, tirets, apostrophes, espaces... ;</li>
                         <li>Multi-locale ;</li>
                         <li>Robuste ;</li>
-                        <li>Contributeurs bienvenus ;</li>
+                        <li>Encore en Alpha (contributeurs bienvenus) ;</li>
+                        <li>En PHP (dsl) et sous MIT ;</li>
+                        <li>Plein de test unitaire ;</li>
+                        <li>Ne corrige pas l'orthographe ☹ ;</li>
                         <li><a href="https://github.com/jolicode/JoliTypo">https://github.com/jolicode/JoliTypo</a></li>
                     </ul>
                 </section>
