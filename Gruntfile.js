@@ -119,7 +119,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-zip' );
 
 	// Default task
-	grunt.registerTask( 'default', [ 'jshint', 'cssmin', 'uglify' ] );
+	grunt.registerTask( 'default', [ 'jshint', 'cssmin', 'uglify', 'typo' ] );
 
 	// Theme task
 	grunt.registerTask( 'themes', [ 'sass' ] );
@@ -130,4 +130,15 @@ module.exports = function(grunt) {
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
 
+    // Fix typography
+	grunt.registerTask( 'typo', "Fix typography", function() {
+        grunt.util.spawn({
+            cmd: 'php',
+            args: ['fix-slides.php']
+        }, function(error, result, code) {
+            if (code === 127) {
+                return grunt.warn(error);
+            }
+        });
+    });
 };
